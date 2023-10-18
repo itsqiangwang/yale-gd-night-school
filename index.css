@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.night-school{
+.night-school-wordmark{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -15,8 +15,8 @@
     color: red;
 }
 
-.objects{
-    width: 90vw;
+.night-school-silhouette{
+    width: 100vw;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
