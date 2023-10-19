@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 
 <head>
@@ -10,64 +10,16 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="menu-items" id="menu-items">
         <ul>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        About
-                    </marquee>
-                </marquee>
-            </li>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        Sessions
-                    </marquee>
-                </marquee>
-            </li>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        Facilitator
-                    </marquee>
-                </marquee>
-            </li>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        Menus
-                    </marquee>
-                </marquee>
-            </li>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        Acknowledgements
-                    </marquee>
-                </marquee>
-            </li>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        Reading List
-                    </marquee>
-                </marquee>
-            </li>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        Schedule
-                    </marquee>
-                </marquee>
-            </li>
-            <li>
-                <marquee behavior="alternate" scrollAmount="5">
-                    <marquee behavior="alternate" scrollAmount="5" direction="down">
-                        Playlist
-                    </marquee>
-                </marquee>
-            </li>
+            <li id="menu-item-about">About</li>
+            <li id="menu-item-sessions">Sessions</li>
+            <li id="menu-item-facilitator">Facilitator</li>
+            <li id="menu-item-menus">Menus</li>
+            <li id="menu-item-acknowledgements">Acknowledgements</li>
+            <li id="menu-item-reading-lists">Reading List</li>
+            <li id="menu-item-schedule">Schedule</li>
+            <li id="menu-item-playlist">Playlist</li>
         </ul>
     </nav>
 
@@ -147,10 +99,11 @@
         <img src="NightSchool.svg" alt="">
     </figure>
 
-    <figure class="night-school-silhouette">
+    <figure id="night-school-silhouette" class="night-school-silhouette">
         <img src="swing.svg" alt="">
     </figure>
 
+    <script src="bounce.js"></script>
     <script src="index.js"></script>
 </body>
 
