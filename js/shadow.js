@@ -1,5 +1,6 @@
 // Get the sundial element
 const sundial = document.getElementById("night-school-silhouette");
+const paragraphs = document.querySelectorAll("section");
 
 function updateSundialShadow() {
   const now = new Date();
@@ -15,6 +16,9 @@ function updateSundialShadow() {
 
   // Set the drop shadow based on the calculated offsets
   sundial.style.filter = `drop-shadow(${xOffset}px ${yOffset}px 5px rgba(25, 25, 0, 0.75)`;
+  for(i=0;i<paragraphs.length;i++){
+    paragraphs[i].style.filter = `drop-shadow(${xOffset}px ${yOffset}px 5px rgba(25, 25, 0, 0.75)`;
+  }
 }
 
 // Update the sundial shadow every minute

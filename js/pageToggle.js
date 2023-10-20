@@ -1,5 +1,5 @@
 // Get all list items and sections
-const listItems = document.querySelectorAll('li');
+const listItems = document.querySelectorAll('nav ul li');
 const sections = document.querySelectorAll('section');
 
 // Add a click event listener to each list item
@@ -14,6 +14,7 @@ listItems.forEach((item, index) => {
         sections.forEach(section => section.style.display = 'none');
         // Show the corresponding section
         sections[index].style.display = 'block';
+        sections[index].style.backgroundColor = 'rgba(25,25,0,0.25)';
     });
 });
 
