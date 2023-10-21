@@ -5,7 +5,7 @@
 
 *{
   box-sizing: border-box;
-  font-family: GeneralGrotesque;
+  font-family: Arial, Helvetica, sans-serif;
   word-break: keep-all;
   font-size: 24pt;
   font-weight: normal;
@@ -34,17 +34,19 @@ section summary:hover{
 
 nav{
   position: fixed;
+  mix-blend-mode: exclusion;
 }
 
 nav ul li{
-  padding: 4pt;
-  border-radius: 4pt;
+  padding: 12pt;
+  border-radius: 24pt;
   list-style-type: none;
   display: block;
   z-index: 2;
   position: fixed;
-  color: white;
+  color: #D6D6CB;
   background-color: rgba(25, 25, 0, 0.75);
+  /* font-size: 48pt !important; */
 }
 
 section {
@@ -54,25 +56,25 @@ section {
   z-index: 1;
   overflow-y: scroll;
   scrollbar-width: none;
-  color: white;
+  color: #D6D6CB;
   padding: 24pt;
 }
 
 section .close-button{
-  padding: 4pt;
+  padding: 4pt 8pt;
   margin-bottom: 24pt;
   font-weight: normal;
   position: sticky;
   top: 0;
   border: none;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #D6D6CB;
   color: rgb(25, 25, 0);
-  border-radius: 10px;
+  border-radius: 24pt;
   z-index: 999;
 }
 
 .active {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #D6D6CB;
   color: rgb(25, 25, 0);
   text-decoration: underline;
 }
@@ -88,14 +90,16 @@ section .close-button{
   /* border: 1px solid red; */
   user-select: none;
   z-index: -1;
+  mix-blend-mode:exclusion;
 }
 
 .night-school-silhouette{
-  width: 100vw;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
+  width: 95vw;
   user-select: none;
   z-index: -1;
+  mix-blend-mode:exclusion;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

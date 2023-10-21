@@ -1,0 +1,8 @@
+section.schedule .schedule-date-description{
+    text-transform: uppercase;
+    margin-left: 24pt;
+}
+
+section.schedule .schedule-breakdown-list:not(:last-of-type){
+    margin-bottom: 24pt;
+}

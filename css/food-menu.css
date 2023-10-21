@@ -4,16 +4,23 @@ section.food-menu .date-picker select {
   right: 24pt;
   border: none;
   padding: 4pt;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #D6D6CB;
   color: rgb(25, 25, 0);
   border-radius: 10px;
+  z-index: 2;
+  text-align: center;
   appearance: none;
+}
+
+section.food-menu .date-picker select option{
+  width: 100px;
+  overflow: hidden;
 }
 
 section.food-menu .arrow-button {
   border: none;
   padding: 4pt;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #D6D6CB;
   color: rgb(25, 25, 0);
   border-radius: 10px;
 }
@@ -42,7 +49,7 @@ section.food-menu .menu-container {
 section.food-menu .menu-container .dish-container {
   padding: 24pt;
   border-radius: 50%;
-  background-color: rgb(200, 200, 175);
+  background-color: #D6D6CB;
   width: 85vmin;
   height: 85vmin;
   overflow: hidden;
@@ -53,12 +60,26 @@ section.food-menu .menu-container .dish-container {
   color: rgb(25, 25, 0);
 }
 
-section.food-menu .menu-container .dish-container ul {
+section.food-menu .menu-container .dish-container .dish-info .dish-type {
+  font-size: 12pt;
+  text-transform: uppercase;
+}
+
+section.food-menu .menu-container .dish-container .dish-info .dish-name {
+  padding-bottom: 24pt;
+}
+
+section.food-menu .menu-container .dish-container .dish-info .dish-ingredients {
   list-style-type: none;
   font-size: 12pt;
 }
 
-section.food-menu .menu-container .dish-container ul li {
+section.food-menu
+  .menu-container
+  .dish-container
+  .dish-info
+  .dish-ingredients
+  li {
   display: inline;
   font-size: inherit;
 }
@@ -66,7 +87,8 @@ section.food-menu .menu-container .dish-container ul li {
 section.food-menu
   .menu-container
   .dish-container
-  ul
+  .dish-info
+  .dish-ingredients
   li:not(:last-of-type)::after {
   content: ",";
 }

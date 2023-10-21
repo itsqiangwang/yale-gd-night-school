@@ -17,7 +17,7 @@ function updateBackgroundColor() {
     alpha = 1.0;
   } else if (hours >= 9 && hours < 17) {
     // Gradually dim from 9 AM to 5 PM
-    alpha = (hours - 8.5) / 8;
+    alpha = (hours - 8) / 8;
   } else {
     // Calculate the alpha based on the time of day
     alpha = 1.0 - totalSeconds / maxSeconds;

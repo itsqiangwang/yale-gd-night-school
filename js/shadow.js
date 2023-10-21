@@ -15,9 +15,9 @@ function updateSundialShadow() {
   const yOffset = Math.cos(angle * (Math.PI / 180)) * 10;
 
   // Set the drop shadow based on the calculated offsets
-  sundial.style.filter = `drop-shadow(${xOffset}px ${yOffset}px 5px rgba(25, 25, 0, 0.75)`;
+  sundial.style.filter = `drop-shadow(${xOffset*10}px ${yOffset*10}px 5px rgb(25, 25, 0)`;
   for(i=0;i<paragraphs.length;i++){
-    paragraphs[i].style.filter = `drop-shadow(${xOffset}px ${yOffset}px 5px rgba(25, 25, 0, 0.75)`;
+    paragraphs[i].style.filter = `drop-shadow(${xOffset*10}px ${yOffset*10}px 5px rgb(25, 25, 0)`;
   }
 }
 

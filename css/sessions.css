@@ -1,0 +1,11 @@
+section.sessions .sessions-title{
+    text-transform: uppercase;
+    margin-left: 24pt;
+}
+
+section.sessions .sessions-description{
+}
+
+section.sessions .sessions-description:not(:last-of-type){
+    margin-bottom: 24pt;
+}

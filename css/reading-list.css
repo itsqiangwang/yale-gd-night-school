@@ -1,0 +1,12 @@
+section.reading-list .reading-collection-name{
+    text-transform: uppercase;
+    margin-left: 24pt;
+}
+
+section.reading-list .reading-title  {
+    font-style: italic;
+}
+
+section.reading-list .reading-collection-list:not(:last-of-type){
+    margin-bottom: 24pt;
+}

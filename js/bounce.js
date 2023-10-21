@@ -1,5 +1,5 @@
 const items = document.querySelectorAll("nav ul li");
-const defaultSpeed = 1;
+const defaultSpeed = 2;
 let speed = defaultSpeed;
 
 function animateItems() {
