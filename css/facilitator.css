@@ -1,0 +1,15 @@
+section.facilitator summary {
+  display: inline-block;
+}
+
+section.facilitator figure {
+}
+
+section.facilitator figure img {
+  max-width: 75vw;
+  max-height: 75vh;
+  /* border: 1px solid blue; */
+}
+
+section.facilitator figcaption {
+}

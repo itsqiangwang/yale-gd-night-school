@@ -1,0 +1,33 @@
+section.playlist .playlist-container{
+    background: rgb(200, 200, 175);
+    border-radius: 50%;
+    padding: 60pt;
+    width: 85vmin;
+    height: 85vmin;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  section.playlist .playlist-container ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  section.playlist .playlist-container ul li{
+    list-style-type: none;
+    display: inline;
+  }
+  /* 
+  section.playlist .playlist-container ul li:not(:last-of-type)::after{
+    content: ',';
+  } */
+  
+  section.playlist .playlist-container ul li::before{
+    content: '•';
+  }

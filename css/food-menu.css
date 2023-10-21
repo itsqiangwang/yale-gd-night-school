@@ -1,0 +1,72 @@
+section.food-menu .date-picker select {
+  position: fixed;
+  top: 24pt;
+  right: 24pt;
+  border: none;
+  padding: 4pt;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(25, 25, 0);
+  border-radius: 10px;
+  appearance: none;
+}
+
+section.food-menu .arrow-button {
+  border: none;
+  padding: 4pt;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(25, 25, 0);
+  border-radius: 10px;
+}
+
+section.food-menu .left-arrow {
+  position: fixed;
+  bottom: 24pt;
+  left: 24pt;
+  display: inline-block;
+}
+
+section.food-menu .right-arrow {
+  position: fixed;
+  bottom: 24pt;
+  right: 24pt;
+  display: inline-block;
+}
+
+section.food-menu .menu-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.food-menu .menu-container .dish-container {
+  padding: 24pt;
+  border-radius: 50%;
+  background-color: rgb(200, 200, 175);
+  width: 85vmin;
+  height: 85vmin;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(25, 25, 0);
+}
+
+section.food-menu .menu-container .dish-container ul {
+  list-style-type: none;
+  font-size: 12pt;
+}
+
+section.food-menu .menu-container .dish-container ul li {
+  display: inline;
+  font-size: inherit;
+}
+
+section.food-menu
+  .menu-container
+  .dish-container
+  ul
+  li:not(:last-of-type)::after {
+  content: ",";
+}
