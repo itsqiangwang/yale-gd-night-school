@@ -1,6 +1,7 @@
 function updateSundialShadow() {
   const image = document.getElementById("night-school-silhouette");
   const paragraphs = document.querySelectorAll("section");
+  const menuLinks = document.querySelectorAll("nav ul li");
   const now = new Date();
   const hours = now.getHours();
   const minutes = now.getMinutes();
@@ -13,6 +14,11 @@ function updateSundialShadow() {
   image.style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
   for (i = 0; i < paragraphs.length; i++) {
     paragraphs[
+      i
+    ].style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
+  }
+  for (i = 0; i < menuLinks.length; i++) {
+    menuLinks[
       i
     ].style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
   }

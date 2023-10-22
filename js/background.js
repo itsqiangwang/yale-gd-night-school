@@ -20,5 +20,5 @@ function updateBackgroundColor() {
   document.body.style.backgroundColor = `rgba(25, 25, 0, ${alpha})`;
 }
 
-setInterval(updateBackgroundColor, 1000); // Update every second
-updateBackgroundColor(); // Initial call
+setInterval(updateBackgroundColor, 1000);
+updateBackgroundColor();
