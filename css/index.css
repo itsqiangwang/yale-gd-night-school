@@ -63,7 +63,7 @@ section summary:hover,
 
 nav{
   position: fixed;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
 }
 
 nav ul li{
@@ -122,14 +122,14 @@ section .close-button{
   /* border: 1px solid red; */
   user-select: none;
   z-index: -1;
-  mix-blend-mode:exclusion;
+  mix-blend-mode: difference;
 }
 
 .night-school-silhouette{
   width: 95vw;
   user-select: none;
   z-index: -1;
-  mix-blend-mode:exclusion;
+  mix-blend-mode:difference;
   position: fixed;
   top: 50%;
   left: 50%;

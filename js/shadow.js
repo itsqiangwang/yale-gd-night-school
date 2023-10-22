@@ -1,28 +1,23 @@
-// Get the sundial element
-const sundial = document.getElementById("night-school-silhouette");
-const paragraphs = document.querySelectorAll("section");
-
 function updateSundialShadow() {
+  const image = document.getElementById("night-school-silhouette");
+  const paragraphs = document.querySelectorAll("section");
   const now = new Date();
   const hours = now.getHours();
   const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  const angle = (hours % 12) * 30 + (minutes / 60) * 30 + (seconds / 60) * 0.5; // Calculate the angle based on the current time
 
-  // Calculate the angle for the shadow (0 degrees at noon, 180 degrees at midnight)
-  const angle = (hours - 6) * 30 + minutes / 2;
+  const shadowX = Math.sin((angle * Math.PI) / 180) * 100; // Shadow X position
+  const shadowY = -Math.cos((angle * Math.PI) / 180) * 100; // Shadow Y position
 
-  // Calculate the X and Y offsets based on the angle
-  const xOffset = Math.sin(angle * (Math.PI / 180)) * 10;
-  const yOffset = Math.cos(angle * (Math.PI / 180)) * 10;
-
-  // Set the drop shadow based on the calculated offsets
-  sundial.style.filter = `drop-shadow(${xOffset*10}px ${yOffset*10}px 5px rgb(25, 25, 0)`;
-  for(i=0;i<paragraphs.length;i++){
-    paragraphs[i].style.filter = `drop-shadow(${xOffset*10}px ${yOffset*10}px 5px rgb(25, 25, 0)`;
+  image.style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
+  for (i = 0; i < paragraphs.length; i++) {
+    paragraphs[
+      i
+    ].style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
   }
 }
 
-// Update the sundial shadow every minute
-setInterval(updateSundialShadow, 1000);
-
-// Call the function once to set the initial shadow
+// Update the shadow initially and then every second
 updateSundialShadow();
+setInterval(updateSundialShadow, 1000);
