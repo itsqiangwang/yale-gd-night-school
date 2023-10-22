@@ -1,5 +1,6 @@
 function updateSundialShadow() {
-  const image = document.getElementById("night-school-silhouette");
+  const wordmark = document.getElementById("night-school-wordmark");
+  const silhouette = document.getElementById("night-school-silhouette");
   const paragraphs = document.querySelectorAll("section");
   const menuLinks = document.querySelectorAll("nav ul li");
   const now = new Date();
@@ -11,14 +12,10 @@ function updateSundialShadow() {
   const shadowX = Math.sin((angle * Math.PI) / 180) * 100; // Shadow X position
   const shadowY = -Math.cos((angle * Math.PI) / 180) * 100; // Shadow Y position
 
-  image.style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
+  wordmark.style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
+  silhouette.style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
   for (i = 0; i < paragraphs.length; i++) {
     paragraphs[
-      i
-    ].style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
-  }
-  for (i = 0; i < menuLinks.length; i++) {
-    menuLinks[
       i
     ].style.filter = `drop-shadow(${shadowX}px ${shadowY}px 10px rgb(25, 25, 0)`;
   }
