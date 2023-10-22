@@ -1,11 +1,17 @@
 @font-face {
-  font-family: 'GeneralGrotesque';
-  src: url('font/GeneralGrotesqueMonoTest-Book.otf') format('opentype');
+  font-family: "GeneralGrotesqueLight";
+  src: url("../font/GeneralGrotesqueMonoTest-light.otf");
+}
+
+@font-face {
+  font-family: "GeneralGrotesqueBold";
+  src: url("../font/GeneralGrotesqueMonoTest-Bold.otf");
 }
 
 *{
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'GeneralGrotesqueLight', Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   word-break: keep-all;
   font-size: 24pt;
   font-weight: normal;
@@ -24,10 +30,25 @@ body{
   overflow: hidden;
 }
 
+#toggleButton{
+  display: none;
+  padding: 4pt 8pt 8pt 8pt;
+  position: fixed;
+  top: 24pt;
+  right: 24pt;
+  border: none;
+  background-color: #D6D6CB;
+  color: rgb(25, 25, 0);
+  border-radius: 24pt;
+  z-index: 1;
+  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+}
+
 nav ul li:hover,
 section button:hover,
 section select:hover,
-section summary:hover{
+section summary:hover,
+#toggleButton:hover{
   cursor: pointer;
   text-decoration: underline;
 }
@@ -42,10 +63,11 @@ nav ul li{
   border-radius: 24pt;
   list-style-type: none;
   display: block;
-  z-index: 2;
+  z-index: -1;
   position: fixed;
   color: #D6D6CB;
   background-color: rgba(25, 25, 0, 0.75);
+  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
   /* font-size: 48pt !important; */
 }
 
@@ -53,7 +75,7 @@ section {
   display: none;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
   overflow-y: scroll;
   scrollbar-width: none;
   color: #D6D6CB;
@@ -61,7 +83,7 @@ section {
 }
 
 section .close-button{
-  padding: 4pt 8pt;
+  padding: 4pt 8pt 8pt 8pt;
   margin-bottom: 24pt;
   font-weight: normal;
   position: sticky;
@@ -70,7 +92,8 @@ section .close-button{
   background-color: #D6D6CB;
   color: rgb(25, 25, 0);
   border-radius: 24pt;
-  z-index: 999;
+  z-index: 3;
+  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
 }
 
 .active {
@@ -102,4 +125,14 @@ section .close-button{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #toggleButton{
+    display: block;
+  }
+  *{
+    font-size: 16pt;
+  }
 }

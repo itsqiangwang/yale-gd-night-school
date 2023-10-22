@@ -1,20 +1,37 @@
 section.facilitator details[open]:not(:last-of-type){
   margin-bottom: 24pt;
   padding-bottom: 24pt;
-  border-bottom: 1px dotted white;
+  border-bottom: 2px dotted #D6D6CB;
+}
+
+section.facilitator details summary{
+  list-style: none;
+}
+
+section.facilitator details summary::after {
+  content: ' (•••)';
+}
+
+
+section.facilitator details[open] summary:after {
+  content: '';
 }
 
 section.facilitator details[open] summary{
   text-decoration: underline;
   margin-left: 24pt;
   margin-bottom: 12pt;
+  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
 }
 
-section.facilitator figure {
- 
+section.facilitator details[open] summary::-webkit-details-marker,
+section.facilitator details[open] summary::marker {
+  display: none; 
+  content: "";
 }
 
 section.facilitator figure img {
   max-width: 75vw;
   max-height: 75vh;
 }
+

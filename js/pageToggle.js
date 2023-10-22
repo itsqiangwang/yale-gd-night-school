@@ -1,6 +1,7 @@
 // Get all list items and sections
 const listItems = document.querySelectorAll('nav ul li');
 const sections = document.querySelectorAll('section');
+const toggleButton = document.getElementById('toggleButton');
 
 // Add a click event listener to each list item
 listItems.forEach((item, index) => {
@@ -15,6 +16,8 @@ listItems.forEach((item, index) => {
         // Show the corresponding section
         sections[index].style.display = 'block';
         sections[index].style.backgroundColor = 'rgba(25,25,0,0.25)';
+
+        toggleButton.style.zIndex = "0";
     });
 });
 
@@ -26,5 +29,7 @@ closeButtons.forEach((button, index) => {
         listItems[index].classList.remove('active');
         // Hide the corresponding section when the close button is clicked
         sections[index].style.display = 'none';
+
+        toggleButton.style.zIndex = "1";
     });
 });

@@ -1,6 +1,7 @@
 section.reading-list .reading-collection-name{
     text-transform: uppercase;
     margin-left: 24pt;
+    font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
 }
 
 section.reading-list .reading-title  {

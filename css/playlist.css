@@ -30,5 +30,5 @@ section.playlist .playlist-container{
   } */
   
   section.playlist .playlist-container ul li::before{
-    content: '•';
+    content: '• ';
   }

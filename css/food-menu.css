@@ -1,15 +1,17 @@
 section.food-menu .date-picker select {
   position: fixed;
-  top: 24pt;
-  right: 24pt;
+  bottom: 24pt;
+  right: 50%;
+  transform: translateX(50%);
   border: none;
-  padding: 4pt;
+  padding: 4pt 8pt 8pt 8pt;
   background-color: #D6D6CB;
   color: rgb(25, 25, 0);
-  border-radius: 10px;
+  border-radius: 24pt;
   z-index: 2;
   text-align: center;
   appearance: none;
+  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
 }
 
 section.food-menu .date-picker select option{
@@ -19,22 +21,21 @@ section.food-menu .date-picker select option{
 
 section.food-menu .arrow-button {
   border: none;
-  padding: 4pt;
+  padding: 4pt 8pt 8pt 8pt;
   background-color: #D6D6CB;
   color: rgb(25, 25, 0);
-  border-radius: 10px;
+  border-radius: 24pt;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 section.food-menu .left-arrow {
-  position: fixed;
-  bottom: 24pt;
   left: 24pt;
   display: inline-block;
 }
 
 section.food-menu .right-arrow {
-  position: fixed;
-  bottom: 24pt;
   right: 24pt;
   display: inline-block;
 }
@@ -50,8 +51,8 @@ section.food-menu .menu-container .dish-container {
   padding: 24pt;
   border-radius: 50%;
   background-color: #D6D6CB;
-  width: 85vmin;
-  height: 85vmin;
+  width: 75vmin;
+  height: 75vmin;
   overflow: hidden;
   text-align: center;
   display: flex;
@@ -67,6 +68,7 @@ section.food-menu .menu-container .dish-container .dish-info .dish-type {
 
 section.food-menu .menu-container .dish-container .dish-info .dish-name {
   padding-bottom: 24pt;
+  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
 }
 
 section.food-menu .menu-container .dish-container .dish-info .dish-ingredients {
@@ -91,4 +93,11 @@ section.food-menu
   .dish-ingredients
   li:not(:last-of-type)::after {
   content: ",";
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  section.food-menu .arrow-button {
+    top: 65%;
+  }
 }

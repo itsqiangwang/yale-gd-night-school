@@ -1,6 +1,7 @@
 section.schedule .schedule-date-description{
     text-transform: uppercase;
     margin-left: 24pt;
+    font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
 }
 
 section.schedule .schedule-breakdown-list:not(:last-of-type){
