@@ -1,5 +1,6 @@
 section.sessions .sessions-title{
-    font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+    font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
     margin-left: 24pt;
 }

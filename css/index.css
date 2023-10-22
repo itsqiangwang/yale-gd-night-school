@@ -1,20 +1,21 @@
 @font-face {
-  font-family: "GeneralGrotesqueLight";
+  font-family: "GeneralGrotesque";
   src: url("../font/GeneralGrotesqueMonoTest-light.otf");
+  font-weight: 100;
 }
 
 @font-face {
-  font-family: "GeneralGrotesqueBold";
+  font-family: "GeneralGrotesque";
   src: url("../font/GeneralGrotesqueMonoTest-Bold.otf");
+  font-weight: 300;
 }
 
 *{
   box-sizing: border-box;
-  font-family: 'GeneralGrotesqueLight', Arial, Helvetica, sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
+  font-weight: 100;
   word-break: keep-all;
   font-size: 24pt;
-  font-weight: normal;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -41,7 +42,8 @@ body{
   background-color: rgba(25, 25, 0, 0.75);
   border-radius: 24pt;
   z-index: 1;
-  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+  font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
+  font-weight: 300;
   mix-blend-mode: difference;
 }
 
@@ -73,8 +75,8 @@ nav ul li{
   position: fixed;
   color: #D6D6CB;
   background-color: rgba(25, 25, 0, 0.75);
-  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
-  /* font-size: 48pt !important; */
+  font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 section {
@@ -99,7 +101,8 @@ section .close-button{
   color: rgb(25, 25, 0);
   border-radius: 24pt;
   z-index: 3;
-  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+  font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .active {

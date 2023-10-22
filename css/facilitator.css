@@ -23,7 +23,8 @@ section.facilitator details[open] summary{
   text-decoration: underline !important;
   margin-left: 24pt;
   margin-bottom: 6pt;
-  font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+  font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 section.facilitator details summary::-webkit-details-marker,
