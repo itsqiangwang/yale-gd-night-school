@@ -7,7 +7,7 @@
 @font-face {
   font-family: "GeneralGrotesque";
   src: url("../font/GeneralGrotesqueMonoTest-Bold.otf");
-  font-weight: 300;
+  font-weight: 700;
 }
 
 *{
@@ -43,7 +43,7 @@ body{
   border-radius: 24pt;
   z-index: 1;
   font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   mix-blend-mode: difference;
 }
 
@@ -76,7 +76,7 @@ nav ul li{
   color: #D6D6CB;
   background-color: rgba(25, 25, 0, 0.75);
   font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 section {
@@ -102,7 +102,7 @@ section .close-button{
   border-radius: 24pt;
   z-index: 3;
   font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .active {
