@@ -62,7 +62,7 @@ section summary:hover,
 }
 
 nav{
-  position: fixed;
+  position: absolute;
   mix-blend-mode: difference;
 }
 
@@ -72,7 +72,7 @@ nav ul li{
   list-style-type: none;
   display: block;
   z-index: -1;
-  position: fixed;
+  position: absolute;
   color: #D6D6CB;
   background-color: rgba(25, 25, 0, 0.75);
   font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
@@ -93,9 +93,8 @@ section {
 section .close-button{
   padding: 4pt 8pt 8pt 8pt;
   margin-bottom: 24pt;
-  font-weight: normal;
   position: sticky;
-  top: 0pt;
+  top: 0;
   border: none;
   background-color: #D6D6CB;
   color: rgb(25, 25, 0);
@@ -112,7 +111,7 @@ section .close-button{
 }
 
 .night-school-wordmark{
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -130,7 +129,7 @@ section .close-button{
   user-select: none;
   z-index: -1;
   mix-blend-mode: difference;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
