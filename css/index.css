@@ -1,12 +1,12 @@
 @font-face {
   font-family: "GeneralGrotesque";
-  src: url("../font/GeneralGrotesqueMonoTest-light.otf");
+  src: url("../font/GeneralGrotesqueMonoTest-light.otf") format("opentype");
   font-weight: 100;
 }
 
 @font-face {
   font-family: "GeneralGrotesque";
-  src: url("../font/GeneralGrotesqueMonoTest-Bold.otf");
+  src: url("../font/GeneralGrotesqueMonoTest-Bold.otf") format("opentype");
   font-weight: 700;
 }
 
