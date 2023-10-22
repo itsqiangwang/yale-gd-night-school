@@ -12,6 +12,7 @@ section.food-menu .date-picker select {
   text-align: center;
   appearance: none;
   font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 section.food-menu .date-picker select option{
@@ -69,6 +70,7 @@ section.food-menu .menu-container .dish-container .dish-info .dish-type {
 section.food-menu .menu-container .dish-container .dish-info .dish-name {
   padding-bottom: 24pt;
   font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 section.food-menu .menu-container .dish-container .dish-info .dish-ingredients {
