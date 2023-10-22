@@ -15,7 +15,7 @@ listItems.forEach((item, index) => {
         sections.forEach(section => section.style.display = 'none');
         // Show the corresponding section
         sections[index].style.display = 'block';
-        sections[index].style.backgroundColor = 'rgba(25,25,0,0.25)';
+        sections[index].style.backgroundColor = 'rgba(25,25,0,0.5)';
 
         toggleButton.style.zIndex = "0";
     });

@@ -5,5 +5,5 @@ section.schedule .schedule-date-description{
 }
 
 section.schedule .schedule-breakdown-list:not(:last-of-type){
-    margin-bottom: 24pt;
+    padding-bottom: 24pt;
 }

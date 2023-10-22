@@ -37,11 +37,17 @@ body{
   top: 24pt;
   right: 24pt;
   border: none;
-  background-color: #D6D6CB;
-  color: rgb(25, 25, 0);
+  color: #D6D6CB;
+  background-color: rgba(25, 25, 0, 0.75);
   border-radius: 24pt;
   z-index: 1;
   font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
+  mix-blend-mode: difference;
+}
+
+
+#toggleButton #speed-indicator{
+  filter: grayscale(100%) contrast(1.2);
 }
 
 nav ul li:hover,
@@ -87,7 +93,7 @@ section .close-button{
   margin-bottom: 24pt;
   font-weight: normal;
   position: sticky;
-  top: 0;
+  top: 0pt;
   border: none;
   background-color: #D6D6CB;
   color: rgb(25, 25, 0);

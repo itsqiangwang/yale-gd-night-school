@@ -60,7 +60,7 @@ function animateItems() {
   }
 
   // Add a click event listener to the button
-  const toggleButton = document.getElementById("toggleButton");
+  const toggleButton = document.getElementById("speed-indicator");
   toggleButton.addEventListener("click", toggleSpeed);
 }
 

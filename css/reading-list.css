@@ -9,5 +9,5 @@ section.reading-list .reading-title  {
 }
 
 section.reading-list .reading-collection-list:not(:last-of-type){
-    margin-bottom: 24pt;
+    padding-bottom: 24pt;
 }
