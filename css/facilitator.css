@@ -6,6 +6,8 @@ section.facilitator details[open]:not(:last-of-type){
 
 section.facilitator details summary{
   list-style: none;
+  appearance: none;
+  -webkit-appearance:none;
 }
 
 section.facilitator details summary::after {
@@ -23,6 +25,13 @@ section.facilitator details[open] summary{
   margin-bottom: 12pt;
   font-family: "GeneralGrotesqueBold", Arial, Helvetica, sans-serif;
 }
+
+section.facilitator details summary::-webkit-details-marker,
+section.facilitator details summary::marker {
+  display: none; 
+  content: "";
+}
+
 
 section.facilitator details[open] summary::-webkit-details-marker,
 section.facilitator details[open] summary::marker {
