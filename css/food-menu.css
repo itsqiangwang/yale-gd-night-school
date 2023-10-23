@@ -15,11 +15,6 @@ section.food-menu .date-picker select {
   font-weight: 700;
 }
 
-section.food-menu .date-picker select option{
-  width: 100px;
-  overflow: hidden;
-}
-
 section.food-menu .arrow-button {
   border: none;
   padding: 4pt 8pt 8pt 8pt;
@@ -43,9 +38,9 @@ section.food-menu .right-arrow {
 
 section.food-menu .menu-container {
   position: fixed;
-  top: 50%;
+  top: 24pt;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0pt);
 }
 
 section.food-menu .menu-container .dish-container {
@@ -100,6 +95,13 @@ section.food-menu
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   section.food-menu .arrow-button {
-    top: 65%;
+    top: calc(100vh - 40pt);
+  }
+
+  section.food-menu .menu-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
