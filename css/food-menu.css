@@ -104,4 +104,9 @@ section.food-menu
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  section.food-menu .menu-container .dish-container {
+    width: 85vmin;
+    height: 85vmin;
+  }
 }
