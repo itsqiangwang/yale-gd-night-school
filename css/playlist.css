@@ -1,3 +1,7 @@
+section.playlist iframe{
+  height: calc(100vh - 114pt);
+}
+
 section.playlist .audio-player-container {
   position: fixed;
   top: 24pt;
