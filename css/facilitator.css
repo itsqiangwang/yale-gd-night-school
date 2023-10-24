@@ -1,47 +1,57 @@
-section.facilitator details[open]:not(:last-of-type){
-  margin-bottom: 24pt;
+section.facilitator .facilitator-info {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 10px solid red; */
+}
+
+section.facilitator .facilitator-info:not(:last-of-type) {
   padding-bottom: 24pt;
-  border-bottom: 2px dotted #D6D6CB;
+  margin-bottom: 24pt;
+  border-bottom: 2px dotted rgba(214, 214, 203, 0.5);
 }
 
-section.facilitator details summary{
-  list-style: none;
-  appearance: none;
-  -webkit-appearance:none;
+section.facilitator .facilitator-info .facilitator-pic-container {
+  width: 30%;
+  /* border: 5px solid blue; */
 }
 
-section.facilitator details summary::after {
-  content: ' (•••)';
+section.facilitator .facilitator-info .facilitator-pic-container .facilitator-profile-pic{
+  width: 100%;
+  border-radius: 12pt;
+  mix-blend-mode: darken;
+  filter: saturate(0);
+  /* border: 5px solid grey; */
+  display: block;
 }
 
-
-section.facilitator details[open] summary:after {
-  content: '';
+section.facilitator .facilitator-info .facilitator-pic-container .facilitator-photo-caption{
+  /* border: 5px solid grey; */
+  padding-top: 4pt;
+  text-transform: uppercase;
+  font-size: 12pt;
 }
 
-section.facilitator details[open] summary{
-  text-decoration: underline !important;
-  margin-left: 24pt;
-  margin-bottom: 6pt;
-  font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+section.facilitator .facilitator-info .facilitator-bio{
+  width: 70%;
+  padding-left: 24pt;
+  /* border: 5px solid green; */
 }
 
-section.facilitator details summary::-webkit-details-marker,
-section.facilitator details summary::marker {
-  display: none; 
-  content: "";
+section.facilitator .facilitator-info .facilitator-bio .facilitator-name{
+  text-transform: uppercase;
+  font-weight: bold;
+  /* border: 5px solid pink; */
 }
 
-
-section.facilitator details[open] summary::-webkit-details-marker,
-section.facilitator details[open] summary::marker {
-  display: none; 
-  content: "";
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  section.facilitator .facilitator-info .facilitator-pic-container {
+    width: 100%;
+  }
+  
+  section.facilitator .facilitator-info .facilitator-bio{
+    width: 100%;
+    padding-left: 0;
+    padding-top: 24pt;
+  }
 }
-
-section.facilitator figure img {
-  max-width: 75vw;
-  max-height: 75vh;
-}
-

@@ -1,19 +1,6 @@
-@font-face {
-  font-family: "GeneralGrotesque";
-  src: url("../font/GeneralGrotesqueMonoTest-Light.otf") format("opentype");
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "GeneralGrotesque";
-  src: url("../font/GeneralGrotesqueMonoTest-Bold.otf") format("opentype");
-  font-weight: 700;
-}
-
 *{
   box-sizing: border-box;
-  font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
   word-break: keep-all;
   font-size: 24pt;
   padding: 0;
@@ -33,7 +20,7 @@ body{
 
 #toggleButton{
   display: none;
-  padding: 4pt 8pt 8pt 8pt;
+  padding: 6pt 12pt;
   position: fixed;
   top: 24pt;
   right: 24pt;
@@ -42,8 +29,8 @@ body{
   background-color: rgba(25, 25, 0, 0.75);
   border-radius: 24pt;
   z-index: 1;
-  font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
   mix-blend-mode: difference;
 }
 
@@ -56,7 +43,8 @@ nav ul li:hover,
 section button:hover,
 section select:hover,
 section summary:hover,
-#toggleButton:hover{
+#toggleButton:hover,
+nav ul li button:hover{
   cursor: pointer;
   text-decoration: underline;
 }
@@ -67,16 +55,20 @@ nav{
 }
 
 nav ul li{
-  padding: 12pt;
-  border-radius: 24pt;
   list-style-type: none;
   display: block;
   z-index: -1;
   position: absolute;
+}
+
+nav ul li button{
+  padding: 6pt 12pt;
+  border-radius: 24pt;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #D6D6CB;
   background-color: rgba(25, 25, 0, 0.75);
-  font-family: 'GeneralGrotesque', Arial, Helvetica, sans-serif;
-  font-weight: 700;
 }
 
 section {
@@ -91,7 +83,7 @@ section {
 }
 
 section .close-button{
-  padding: 4pt 8pt 8pt 8pt;
+  padding: 6pt 12pt;
   margin-bottom: 24pt;
   position: sticky;
   top: 0;
@@ -100,13 +92,13 @@ section .close-button{
   color: rgb(25, 25, 0);
   border-radius: 24pt;
   z-index: 3;
-  font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .active {
-  background-color: #D6D6CB;
   color: rgb(25, 25, 0);
+  background-color: #D6D6CB;
   text-decoration: underline;
 }
 
@@ -118,7 +110,6 @@ section .close-button{
   width: 95vw;
   max-width: 100vw;
   max-height: 100vh;
-  /* border: 1px solid red; */
   user-select: none;
   z-index: -1;
   mix-blend-mode: difference;
@@ -129,10 +120,10 @@ section .close-button{
   user-select: none;
   z-index: -1;
   mix-blend-mode: difference;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  bottom: 5vw;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 768px) {

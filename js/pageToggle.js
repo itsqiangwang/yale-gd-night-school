@@ -1,5 +1,5 @@
 // Get all list items and sections
-const listItems = document.querySelectorAll('nav ul li');
+const listItems = document.querySelectorAll('nav ul li button');
 const sections = document.querySelectorAll('section');
 const toggleButton = document.getElementById('toggleButton');
 

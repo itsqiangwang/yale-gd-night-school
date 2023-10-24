@@ -1,8 +1,8 @@
 section.reading-list .reading-collection-name{
     text-transform: uppercase;
     margin-left: 24pt;
-    font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 section.reading-list .reading-title  {

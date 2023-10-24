@@ -1,0 +1,3 @@
+section.acknowledgements .acknowledgements-text:not(:first-of-type){
+    padding-top: 24pt;
+}

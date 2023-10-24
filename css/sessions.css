@@ -1,11 +1,7 @@
 section.sessions .sessions-title{
-    font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     text-transform: uppercase;
     margin-left: 24pt;
-}
-
-section.sessions .sessions-description{
 }
 
 section.sessions .sessions-description:not(:last-of-type){

@@ -4,20 +4,20 @@ section.food-menu .date-picker select {
   right: 50%;
   transform: translateX(50%);
   border: none;
-  padding: 4pt 8pt 8pt 8pt;
+  padding: 6pt 12pt;
   background-color: #D6D6CB;
   color: rgb(25, 25, 0);
   border-radius: 24pt;
   z-index: 2;
   text-align: center;
   appearance: none;
-  font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 section.food-menu .arrow-button {
   border: none;
-  padding: 4pt 8pt 8pt 8pt;
+  padding: 6pt 12pt;
   background-color: #D6D6CB;
   color: rgb(25, 25, 0);
   border-radius: 24pt;
@@ -60,12 +60,13 @@ section.food-menu .menu-container .dish-container {
 section.food-menu .menu-container .dish-container .dish-info .dish-type {
   font-size: 12pt;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 section.food-menu .menu-container .dish-container .dish-info .dish-name {
   padding-bottom: 24pt;
-  font-family: "GeneralGrotesque", Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 section.food-menu .menu-container .dish-container .dish-info .dish-ingredients {
