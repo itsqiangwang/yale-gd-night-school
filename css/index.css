@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  touch-action: none;
+  touch-action: manipulation;
 }
 
 ::-webkit-scrollbar {
