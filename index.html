@@ -1,28 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charmenu="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/acknowledgements.css">
-    <link rel="stylesheet" href="css/facilitator.css">
-    <link rel="stylesheet" href="css/food-menu.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/playlist.css">
-    <link rel="stylesheet" href="css/reading-list.css">
-    <link rel="stylesheet" href="css/schedule.css">
-    <link rel="stylesheet" href="css/sessions.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/acknowledgements.css" />
+    <link rel="stylesheet" href="css/facilitator.css" />
+    <link rel="stylesheet" href="css/food-menu.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/playlist.css" />
+    <link rel="stylesheet" href="css/reading-list.css" />
+    <link rel="stylesheet" href="css/schedule.css" />
+    <link rel="stylesheet" href="css/sessions.css" />
     <title>Night School</title>
-</head>
+  </head>
 
-<body id="body">
+  <body id="body">
     <nav class="nav-menu">
+      <button id="toggleButton">
+        <span id="speed-indicator">🐢</span>
+      </button>
         <button id="toggleButton" aria-label="slow">
             <span id="speed-indicator">🐢</span>
         </button>
 
+      <ul>
+        <li id="nav-menu-item-about">
+          <button>About</button>
+        </li>
+        <li id="nav-menu-item-sessions">
+          <button>Sessions</button>
+        </li>
+        <li id="nav-menu-item-facilitator">
+          <button>Facilitator</button>
+        </li>
+        <li id="nav-menu-item-menus">
+          <button>Menus</button>
+        </li>
+        <li id="nav-menu-item-acknowledgements">
+          <button>Acknowledgements</button>
+        </li>
+        <li id="nav-menu-item-reading-lists">
+          <button>Reading&nbsp;List</button>
+        </li>
+        <li id="nav-menu-item-schedule">
+          <button>Schedule</button>
+        </li>
+        <li id="nav-menu-item-playlist">
+          <button>Playlist</button>
+        </li>
+      </ul>
         <ul>
             <li id="nav-menu-item-about">
                 <button aria-label="About">About</button>
@@ -52,49 +81,31 @@
     </nav>
 
     <section class="about">
-        <button class="close-button" aria-label="Close" tabindex="0">Close</button>
-        <p class="about-text">
-            Night School is a week-long interdisciplinary workshop hosted by the Yale Graphic Design department, which
-            brings a lineup of guest artists, theorists and researchers to work together with students in the programme.
-            Night School sessions create a space for multi-level engagements between the cohorts around critical, timely
-            issues, developing meaningful discourse between students and faculty and an acknowledgment of each of our
-            humanity as it relates to contexts beyond the walls of the department. Some of this already happens through
-            our courses but there is a need for a focused effort, especially in light changes within the United States
-            and globally that have affected legislation, the environment, global economies and the movement of people.
-        </p>
-
-        <p class="about-text">
-            This semester’s Night School is designed in conversation with the exhibition, ‘Survival in the 21st
-            Century’, organized and curated by Georg Diez, Nicolaus Schafhausen and menu for presentation 2024 at
-            Deichtorhallen Hamburg in Germany. One part of this project in Hamburg is The School of Survival which will
-            form a central part of the exhibition, an emancipatory and learning space, arranged around for kinds of
-            practices: Local practice, Democratic practice, Transformative practice, Planetary practice.
-        </p>
-
-        <p class="about-text-secondary">
-            Secondary texts This semester’s Night School is designed in conversation with the exhibition, ‘Survival in
-            the 21st
-            Century’, organized and curated by Georg Diez, Nicolaus Schafhausen and menu for presentation 2024 at
-            Deichtorhallen Hamburg in Germany.
-        </p>
+      <button class="close-button">Close</button>
+      <p class="about-text" id="about__content">
+      </p>
     </section>
 
     <section class="sessions">
+      <button class="close-button">Close</button>
         <button class="close-button" aria-label="Close" tabindex="0">Close</button>
 
-        <h2 class="sessions-title">Cooking class: Paul John</h2>
-        <p class="sessions-description">
-            Cooking class Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.
-        </p>
-        <p class="sessions-description-secondary">
-            Band Practice Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-        </p>
+      <h2 class="sessions-title">Cooking class: Paul John</h2>
+      <p class="sessions-description">
+        Cooking class Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="sessions-description-secondary">
+        Band Practice Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
+      </p>
 
         <h2 class="sessions-title">Language class: Kevin Simmonds</h2>
         <p class="sessions-description">
@@ -796,6 +807,7 @@
         <img id="silhouette" src="media/swing-silhouette.svg" alt="">
     </figure>
 
+    <script src="js/arena.js" defer></script>
     <script src="js/shadow.js"></script>
     <script src="js/background.js"></script>
     <script src="js/bounce.js"></script>
