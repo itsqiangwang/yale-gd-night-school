@@ -1,3 +1,18 @@
 section.acknowledgements .acknowledgements-text:not(:first-of-type){
     padding-top: 24pt;
 }
+
+section.acknowledgements .acknowledgements-text-secondary {
+    padding-top: 24pt;
+    font-size: 16pt;
+    width: 75%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  
+    section.acknowledgements .acknowledgements-text-secondary {
+      font-size: 12pt;
+    }
+  }
+  

@@ -1,3 +1,17 @@
-section.about .about-text:not(:first-of-type){
-    padding-top: 24pt;
+section.about .about-text:not(:first-of-type) {
+  padding-top: 24pt;
+}
+
+section.about .about-text-secondary {
+  padding-top: 24pt;
+  font-size: 16pt;
+  width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  section.about .about-text-secondary {
+    font-size: 12pt;
+  }
 }

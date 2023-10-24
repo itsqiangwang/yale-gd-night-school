@@ -1,4 +1,4 @@
-const rotatingCircle = document.getElementById('playlist-container');
+const rotatingCircle = document.getElementById('playlist-audio-player');
 let rotationAngle = 0;
 
 function rotateCircle() {

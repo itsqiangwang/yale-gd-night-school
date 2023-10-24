@@ -7,7 +7,7 @@ section.facilitator .facilitator-info {
 section.facilitator .facilitator-info:not(:last-of-type) {
   padding-bottom: 24pt;
   margin-bottom: 24pt;
-  border-bottom: 2px dotted rgba(214, 214, 203, 0.5);
+  border-bottom: 1px dotted #d6d6cb80;
 }
 
 section.facilitator .facilitator-info .facilitator-pic-container {

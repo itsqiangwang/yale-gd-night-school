@@ -1,8 +1,13 @@
 section.reading-list .reading-collection-name{
     text-transform: uppercase;
-    margin-left: 24pt;
+    padding-left: 24pt;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+section.reading-list .reading-collection-name:not(:first-of-type){
+    border-top: 1px dotted #d6d6cb80;
+    padding-top: 24pt;
 }
 
 section.reading-list .reading-title  {

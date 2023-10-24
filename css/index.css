@@ -44,7 +44,8 @@ section button:hover,
 section select:hover,
 section summary:hover,
 #toggleButton:hover,
-nav ul li button:hover{
+nav ul li button:hover,
+a:hover{
   cursor: pointer;
   text-decoration: underline;
 }

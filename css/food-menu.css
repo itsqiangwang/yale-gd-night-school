@@ -96,7 +96,7 @@ section.food-menu
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   section.food-menu .arrow-button {
-    top: calc(100vh - 40pt);
+    top: 70%;
   }
 
   section.food-menu .menu-container {
