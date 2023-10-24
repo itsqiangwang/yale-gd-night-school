@@ -62,6 +62,15 @@ function animateItems() {
   // Add a click event listener to the button
   const toggleButton = document.getElementById("speed-indicator");
   toggleButton.addEventListener("click", toggleSpeed);
-}
 
+  // const listItems = document.querySelectorAll("nav ul li button");
+  // listItems.forEach((item, index) => {
+  //   item.addEventListener("click", toggleSpeed);
+  // });
+
+  // const closeButtons = document.querySelectorAll(".close-button");
+  // closeButtons.forEach((button, index) => {
+  //   button.addEventListener("click", toggleSpeed);
+  // });
+}
 animateItems();

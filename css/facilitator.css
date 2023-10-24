@@ -18,7 +18,6 @@ section.facilitator .facilitator-info .facilitator-pic-container {
 section.facilitator .facilitator-info .facilitator-pic-container .facilitator-profile-pic{
   width: 100%;
   border-radius: 12pt;
-  mix-blend-mode: darken;
   filter: saturate(0);
   /* border: 5px solid grey; */
   display: block;
