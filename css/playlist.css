@@ -1,14 +1,14 @@
-section.playlist .audio-player-container{
+section.playlist .audio-player-container {
   position: fixed;
   top: 24pt;
   left: 50%;
   transform: translate(-50%, 0pt);
-  }
+}
 
-  section.playlist .audio-player-container .current-song-name{
-    padding: 24pt;
+section.playlist .audio-player-container .current-song-name {
+  padding: 24pt;
   border-radius: 50%;
-  background-color: #D6D6CB;
+  background-color: #d6d6cb;
   width: 75vmin;
   height: 75vmin;
   overflow: hidden;
@@ -18,75 +18,107 @@ section.playlist .audio-player-container{
   justify-content: center;
   color: rgb(25, 25, 0);
   animation: spin 10s linear infinite;
-  }
-
-  @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
-  section.playlist .audio-player-container audio{
-    display: none;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
-  section.playlist .playlist-container{
-    width: calc(100vw - 48pt);
-    height: calc(25vmin - 72pt);
-    position: fixed;
-    bottom: 24pt;
-    /* border: 1px solid red; */
-    overflow-y: scroll;
-    scrollbar-width: none;
-  }
+section.playlist .audio-player-container audio {
+  display: none;
+}
 
-  section.playlist .playlist-container ul{
-    list-style-type: none;
-    text-align: center;
-    /* border: 1px solid blue; */
-  }
-  
-  section.playlist .playlist-container ul li{
-    list-style-type: none;
-    display: inline;
-  }
+section.playlist .playlist-container {
+  width: calc(100vw - 48pt);
+  height: calc(25vmin - 72pt);
+  position: fixed;
+  bottom: 24pt;
+  border-top: 1px dotted #d6d6cb80;
+  border-bottom: 1px dotted #d6d6cb80;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 24pt 0;
+}
 
-  section.playlist .playlist-container ul li a{
-    color: #D6D6CB;
-    text-decoration: none;
-  }
+section.playlist .playlist-container ul {
+  list-style-type: none;
+  text-align: center;
+  /* border: 1px solid blue; */
+}
 
-  section.playlist .playlist-container ul li a:hover{
-    text-decoration: underline;
-  }
+section.playlist .playlist-container ul li {
+  list-style-type: none;
+  display: inline;
+}
 
-  /* section.playlist .playlist-container ul li:not(:last-of-type)::after{
+section.playlist .playlist-container ul li a {
+  color: #d6d6cb;
+  text-decoration: none;
+}
+
+section.playlist .playlist-container ul li a:hover {
+  text-decoration: underline;
+}
+
+/* section.playlist .playlist-container ul li:not(:last-of-type)::after{
     content: ',';
   } */
-  
-  section.playlist .playlist-container ul li::before{
-    content: '• ';
+
+section.playlist .playlist-container ul li::before {
+  content: "• ";
+}
+
+#song-list a.active {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #d6d6cb;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+#current-song-name.active {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+#play-pause-button {
+  padding: 6pt 12pt;
+  margin-bottom: 24pt;
+  position: fixed;
+  top: 24pt;
+  right: 24pt;
+  border: none;
+  background-color: #d6d6cb;
+  color: rgb(25, 25, 0);
+  border-radius: 24pt;
+  z-index: 3;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  section.playlist .audio-player-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-
-    section.playlist .audio-player-container {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  
-    section.playlist .audio-player-container .current-song-name {
-      width: 85vmin;
-      height: 85vmin;
-    }
-
-    section.playlist .playlist-container{
-      height: 25vmin;
-    }  
+  section.playlist .audio-player-container .current-song-name {
+    width: 85vmin;
+    height: 85vmin;
   }
+
+  section.playlist .playlist-container {
+    height: 35vmin;
+  }
+}
