@@ -31,7 +31,7 @@ class NightSchoolArenaCMS {
     this.channel = channel;
     this.data = null;
     this.contents = null;
-    this.setup().then(r => console.log('ArenaCMS setup complete'));
+    this.setup().then(r => console.log('ArenaCMS setup complete for', this.channel.name));
   }
 
   async setup() {
@@ -79,7 +79,8 @@ class NightSchoolArenaCMS {
 
   handleAcknowledgementsContent(contents) {
     const content = contents.find(content => content.title === this.channel.name);
-    if (!content && content.class !== 'Text')  return;
+    if (!content)  return;
+    if (content.class !== 'Text')  return;
     const container = document.querySelector(this.channel.container);
     container.innerHTML = content.content_html;
   }
