@@ -17,3 +17,18 @@ section.reading-list .reading-title  {
 section.reading-list .reading-collection-list:not(:last-of-type){
     padding-bottom: 24pt;
 }
+
+#reading-list__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#reading-list__content a {
+    transition: all 0.25s ease-in-out;
+}
+
+#reading-list__content a:hover{
+    text-decoration: underline;
+    transform: translateX(0.5rem);
+}
