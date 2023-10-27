@@ -1,4 +1,4 @@
-section.about .about-text:not(:first-of-type) {
+section.about p:not(:first-of-type) {
   padding-top: 24pt;
 }
 
