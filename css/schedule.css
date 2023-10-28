@@ -4,7 +4,7 @@ section.schedule .schedule-date-description{
     padding-left: 24pt;
 }
 
-section.schedule .schedule-breakdown-list{
+section.schedule .schedule-breakdown-list:not(:last-of-type){
     padding-bottom: 24pt;
 }
 

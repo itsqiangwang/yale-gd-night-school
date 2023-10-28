@@ -1,0 +1,74 @@
+section.family-dinner .arrow-button {
+  border: none;
+  padding: 6pt 12pt;
+  background-color: #D6D6CB;
+  color: rgb(25, 25, 0);
+  border-radius: 24pt;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.family-dinner .left-arrow {
+  left: 24pt;
+  display: inline-block;
+}
+
+section.family-dinner .right-arrow {
+  right: 24pt;
+  display: inline-block;
+}
+
+section.family-dinner .menu-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.family-dinner .menu-container .dish-container {
+  padding: 48pt;
+  border-radius: 50%;
+  background-color: #D6D6CB;
+  width: 75vmin;
+  height: 75vmin;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(25, 25, 0);
+}
+
+section.family-dinner .menu-container .dish-container .dish-info .dish-date {
+  font-size: 12pt;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-bottom: 12pt;
+}
+
+section.family-dinner .menu-container .dish-container .dish-info .dish-name {
+  /* padding-bottom: 24pt; */
+  font-weight: bold;
+  line-height: 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  section.family-dinner .arrow-button {
+    top: calc(100vh - 42pt);
+  }
+
+  section.family-dinner .menu-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  section.family-dinner .menu-container .dish-container {
+    width: 85vmin;
+    height: 85vmin;
+  }
+}

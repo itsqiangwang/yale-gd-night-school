@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/acknowledgements.css" />
     <link rel="stylesheet" href="css/facilitator.css" />
-    <link rel="stylesheet" href="css/food-menu.css" />
+    <link rel="stylesheet" href="css/family-dinner.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/playlist.css" />
     <link rel="stylesheet" href="css/reading-list.css" />
@@ -19,11 +19,8 @@
 
   <body id="body">
     <nav class="nav-menu">
-      <button id="toggleButton">
-        <span id="speed-indicator">🐢</span>
-      </button>
-        <button id="toggleButton" aria-label="slow">
-            <span id="speed-indicator">🐢</span>
+        <button id="toggleButton" aria-label="Pause">
+            <span id="speed-indicator">Pause</span>
         </button>
         <ul>
             <li id="nav-menu-item-about">
@@ -36,7 +33,7 @@
                 <button aria-label="Facilitators">Facilitators</button>
             </li>
             <li id="nav-menu-item-menus">
-                <button aria-label="Family Dinner">Family Dinner</button>
+                <button aria-label="Family Dinner">Family&nbsp;Dinner</button>
             </li>
             <li id="nav-menu-item-acknowledgements">
                 <button aria-label="Acknowledgements">Acknowledgements</button>
@@ -97,271 +94,48 @@
 
     </section>
 
-    <section class="food-menu">
+    <section class="family-dinner">
         <button class="close-button" aria-label="Close" tabindex="0">Close</button>
 
-        <div class="date-picker">
-            <select id="datePicker">
-                <option value="mon-oct-30-23">Mon, October 30</option>
-                <option value="tues-oct-31-23">Tues, October 31</option>
-                <option value="wed-nov-1-23">Wed, November 1</option>
-                <option value="thurs-nov-2-23">Thurs, November 2</option>
-                <option value="fri-nov-3-23">Fri, November 3</option>
-            </select>
-        </div>
+        <div class="menu-container">
+            <div class="dish-container">
+                <div class="dish-info">
+                    <h2 class="dish-date">Monday, October 30: Community Potluck</h2>
+                    <h1 class="dish-name">For us by us! Dinner provided by community members. Everyone bring something to share.</h1>
+                </div>
+            </div>
 
-        <div class="menu-container mon-oct-30-23" number-of-slides="3">
             <div class="dish-container">
                 <div class="dish-info">
-                    <h2 class="dish-type">M103023 Dish type 1</h2>
-                    <h1 class="dish-name">M103023 Dish name 1</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
+                    <h2 class="dish-date">Tuesday, October 31: Cooking class offering 1</h2>
+                    <h1 class="dish-name">Pozole with Tostadas</h1>
                 </div>
             </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">M103023 Dish type 2</h2>
-                    <h1 class="dish-name">M103023 Dish name 2</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">M103023 Dish type 3</h2>
-                    <h1 class="dish-name">M103023 Dish name 3</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        <div class="menu-container tues-oct-31-23" number-of-slides="4">
             <div class="dish-container">
                 <div class="dish-info">
-                    <h2 class="dish-type">T103123 Dish type 1</h2>
-                    <h1 class="dish-name">T103123 Dish name 1</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
+                    <h2 class="dish-date">Wednesday, November 1: Cooking class offering 2</h2>
+                    <h1 class="dish-name">Waffle bar with bacon, eggs, vegan chicken, ice cream</h1>
                 </div>
             </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">T103123 Dish type 2</h2>
-                    <h1 class="dish-name">T103123 Dish name 2</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">T103123 Dish type 3</h2>
-                    <h1 class="dish-name">T103123 Dish name 3</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">T103123 Dish type 4</h2>
-                    <h1 class="dish-name">T103123 Dish name 4</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        <div class="menu-container wed-nov-1-23" number-of-slides="5">
             <div class="dish-container">
                 <div class="dish-info">
-                    <h2 class="dish-type">Wed110123 Dish type 1</h2>
-                    <h1 class="dish-name">Wed110123 Dish name 1</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
+                    <h2 class="dish-date">Thursday, November 2: Cooking class offering 3</h2>
+                    <h1 class="dish-name">Dumplings, fried rice (one vegetarian option) bok choy and broccoli with garlic sauce brown sauce with LinYee Yuan and chef Kendall Thigpen.</h1>
                 </div>
             </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Wed110123 Dish type 2</h2>
-                    <h1 class="dish-name">Wed110123 Dish name 2</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Wed110123 Dish type 3</h2>
-                    <h1 class="dish-name">Wed110123 Dish name 3</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Wed110123 Dish type 4</h2>
-                    <h1 class="dish-name">Wed110123 Dish name 4</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Wed110123 Dish type 5</h2>
-                    <h1 class="dish-name">Wed110123 Dish name 5</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        <div class="menu-container thurs-nov-2-23" number-of-slides="3">
             <div class="dish-container">
                 <div class="dish-info">
-                    <h2 class="dish-type">Th110223 Dish type 1</h2>
-                    <h1 class="dish-name">Th110223 Dish name 1</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Th110223 Dish type 2</h2>
-                    <h1 class="dish-name">Th110223 Dish name 2</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Th110223 Dish type 3</h2>
-                    <h1 class="dish-name">Th110223 Dish name 3</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="menu-container fri-nov-3-23" number-of-slides="3">
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Fri110323 Dish type 1</h2>
-                    <h1 class="dish-name">Fri110323 Dish name 1</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Fri110323 Dish type 2</h2>
-                    <h1 class="dish-name">Fri110323 Dish name 2</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="dish-container">
-                <div class="dish-info">
-                    <h2 class="dish-type">Fri110323 Dish type 3</h2>
-                    <h1 class="dish-name">Fri110323 Dish name 3</h1>
-                    <ul class="dish-ingredients">
-                        <li>Ingredient 1</li>
-                        <li>Ingredient 2</li>
-                        <li>Ingredient 3</li>
-                        <li>Ingredient 4</li>
-                        <li>Ingredient 5</li>
-                    </ul>
+                    <h2 class="dish-date">Friday, November 3: Community Potluck</h2>
+                    <h1 class="dish-name">Final dinner. Everyone bring something to share.</h1>
                 </div>
             </div>
         </div>
 
         <button class="arrow-button left-arrow" id="prevButton" aria-label="previous" tabindex="1">&#8672;</button>
         <button class="arrow-button right-arrow" id="nextButton" aria-label="next" tabindex="2">&#8674;</button>
-
     </section>
 
     <section class="acknowledgements">
@@ -424,26 +198,6 @@
             src="https://open.spotify.com/embed/playlist/5dSpiVK76SeRmzjdmI1Wwm?utm_source=generator" width="100%"
             height="352" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <!-- <button id="play-pause-button">Play</button>
-
-        <div class="audio-player-container" id="audio-player-container">
-            <div class="current-song-name" id="current-song-name"></div>
-            <audio id="audio-player">
-                <source id="audio-source" src="" type="audio/mp3">
-            </audio>
-        </div>
-
-        <div class="playlist-container">
-            <ul id="song-list">
-                <li><a href="#" data-src="media/playlist/FloatingPoints-Elaenia-01Nespole.mp3" data-title="Nespole — Floating Points">Nespole — Floating Points</a></li>
-                <li><a href="#" data-src="media/playlist/FloatingPoints-Elaenia-02Silhouettes(l,ll,lll).mp3" data-title="Silhouettes(l,ll,lll) — Floating Points">Silhouettes(l,ll,lll) — Floating Points</a></li>
-                <li><a href="#" data-src="media/playlist/FloatingPoints-Elaenia-03Elaenia.mp3" data-title="Elaenia — Floating Points">Elaenia — Floating Points</a></li>
-                <li><a href="#" data-src="media/playlist/FloatingPoints-Elaenia-04Argente.mp3" data-title="Argente — Floating Points">Argente — Floating Points</a></li>
-                <li><a href="#" data-src="media/playlist/FloatingPoints-Elaenia-05ThinAir.mp3" data-title="Thin Air — Floating Points">Thin Air — Floating Points</a></li>
-                <li><a href="#" data-src="media/playlist/FloatingPoints-Elaenia-06ForMarmish.mp3" data-title="For Marmish — Floating Points">For Marmish — Floating Points</a></li>
-                <li><a href="#" data-src="media/playlist/FloatingPoints-Elaenia-07PerorationSix.mp3" data-title="Peroration Six — Floating Points">Peroration Six — Floating Points</a></li>
-            </ul>
-        </div> -->
     </section>
 
     <figure class="night-school-wordmark">
@@ -454,13 +208,12 @@
         <img id="silhouette" src="media/swing-silhouette.svg" alt="">
     </figure>
 
-    <script src="js/arena.js" defer></script>
     <script src="js/shadow.js"></script>
     <script src="js/background.js"></script>
     <script src="js/bounce.js"></script>
     <script src="js/pageToggle.js"></script>
     <script src="js/menuCarousel.js"></script>
-    <!-- <script src="js/playlist.js"></script> -->
+    <script src="js/arena.js" defer></script>
 </body>
 
 </html>

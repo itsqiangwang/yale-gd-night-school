@@ -25,7 +25,6 @@ a {
 }
 
 #toggleButton{
-  display: none;
   padding: 6pt 12pt;
   position: fixed;
   top: 24pt;
@@ -34,15 +33,15 @@ a {
   color: #D6D6CB;
   background-color: rgba(25, 25, 0, 0.75);
   border-radius: 24pt;
-  z-index: 1;
+  z-index: 3;
   font-weight: bold;
   text-transform: uppercase;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
 }
 
 
 #toggleButton #speed-indicator{
-  filter: grayscale(100%) contrast(1.2);
+  /* filter: grayscale(100%) contrast(1.2); */
 }
 
 nav ul li:hover,
@@ -123,22 +122,25 @@ section .close-button{
 }
 
 .night-school-silhouette{
-  width: 95vw;
+  width: 75vw;
   user-select: none;
   z-index: -1;
   mix-blend-mode: difference;
   position: fixed;
-  bottom: 5vw;
+  bottom: 24pt;
   left: 50%;
   transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  #toggleButton{
-    display: block;
-  }
   *{
     font-size: 16pt;
+  }
+
+  .night-school-silhouette{
+    width: 95vw;
+    top: 0;
+    transform: translateX(-50%);
   }
 }

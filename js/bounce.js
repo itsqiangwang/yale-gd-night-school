@@ -50,11 +50,12 @@ function animateItems() {
     if (isSpeedReduced) {
       // If speed is reduced, restore it to the default speed
       speed = defaultSpeed;
-      toggleButton.textContent = "🐢";
+      toggleButton.textContent = "Pause";
     } else {
       // If speed is not reduced, reduce it (you can adjust the division factor as needed)
-      speed = defaultSpeed / 4;
-      toggleButton.textContent = "🐇";
+      // speed = defaultSpeed / 4;
+      speed = 0;
+      toggleButton.textContent = "Play";
     }
     isSpeedReduced = !isSpeedReduced; // Toggle the speed state
   }
