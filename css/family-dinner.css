@@ -53,11 +53,10 @@ section.family-dinner .menu-container .dish-container .dish-info .dish-name {
   line-height: 1;
 }
 
-
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   section.family-dinner .arrow-button {
-    top: calc(100vh - 42pt);
+    top: 70%;
   }
 
   section.family-dinner .menu-container {
